@@ -2,7 +2,7 @@
 set -euo pipefail
 
 # 👉 Für reproduzierbare Setups lieber auf einen festen Commit pinnen:
-RAW_URL="https://raw.githubusercontent.com/moritzdemmerCode/no/main/provision/provision.sh"
+RAW_URL="https://raw.githubusercontent.com/moritzdemmerCode/no/main/provision/comfyui_provision.sh"
 
 if [[ -z "${GH_TOKEN:-}" ]]; then
   echo "ERROR: GH_TOKEN fehlt (GitHub PAT mit read-only auf moritzdemmerCode/no)"; exit 1
