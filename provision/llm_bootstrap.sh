@@ -7,7 +7,8 @@ set -euo pipefail
 # Lädt das Provisioning-Script aus dem privaten Repo und führt es aus.
 # =============================================================================
 
-RAW_URL="https://raw.githubusercontent.com/moritzdemmerCode/no/main/provision/llm_provision.sh"
+# Cache-Bust: append ?v=2 to force fresh download
+RAW_URL="https://raw.githubusercontent.com/moritzdemmerCode/no/main/provision/llm_provision.sh?v=2"
 
 if [[ -z "${GH_TOKEN:-}" ]]; then
   echo "ERROR: GH_TOKEN fehlt (GitHub PAT mit read-only auf moritzdemmerCode/no)"; exit 1
