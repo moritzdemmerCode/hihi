@@ -8,7 +8,7 @@ set -euo pipefail
 # =============================================================================
 
 # Cache-Bust: append ?v=X to force fresh download
-RAW_URL="https://raw.githubusercontent.com/moritzdemmerCode/no/main/provision/llm_provision.sh?v=3"
+RAW_URL="https://raw.githubusercontent.com/moritzdemmerCode/no/main/provision/llm_provision.sh?v=4"
 
 if [[ -z "${GH_TOKEN:-}" ]]; then
   echo "ERROR: GH_TOKEN fehlt (GitHub PAT mit read-only auf moritzdemmerCode/no)"; exit 1
